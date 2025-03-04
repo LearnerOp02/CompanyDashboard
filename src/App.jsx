@@ -31,11 +31,11 @@ import AssignedProject from "./components/Employee-dashboard/assignedproect";
 import LeaveSalary from "./components/Employee-dashboard/leavesallary";
 
 
-import Company from "./components/Owner-dashboard/ClientManagement/Company";
-import QuotationList from "./components/Owner-dashboard/ClientManagement/quotationList";
-import QuotationInfo from "./components/Owner-dashboard/ClientManagement/quotationInfo";
-import ManageUser from "./components/Owner-dashboard/ManageUser/User";
-import RevenueManagement from "./components/Owner-dashboard/Revenue/RevenueManagement";
+import Company from "./components/Owner-dashboard/clientmanagement/company";
+import QuotationList from "./components/Owner-dashboard/clientmanagement/quotationList";
+import QuotationInfo from "./components/Owner-dashboard/clientmanagement/quotationInfo";
+import ManageUser from "./components/Owner-dashboard/manageuser/User";
+import RevenueManagement from "./components/Owner-dashboard/revenue/RevenueManagement";
 
 const App = () => {
   return (
