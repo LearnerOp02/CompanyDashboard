@@ -5,7 +5,7 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import OwnerDashboard from "./components/owner-dashboard/owner-dashboard";
+// import OwnerDashboard from "./components/owner-dashboard/owner-dashboard";
 import Login from "./components/login/login";
 import ClerkDashboard from "./components/Clerk-dashboard/Clerk-dashboard";
 import ClientManagement from "./components/Clerk-dashboard/ClientManagement";
