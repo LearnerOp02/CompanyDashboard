@@ -31,7 +31,7 @@ import AssignedProject from "./components/Employee-dashboard/assignedproect";
 import LeaveSalary from "./components/Employee-dashboard/leavesallary";
 
 
-import Company from "./components/Owner-dashboard/ClientManagement/company";
+import Company from "./components/Owner-dashboard/ClientManagement/Company";
 import QuotationList from "./components/Owner-dashboard/ClientManagement/quotationList";
 import QuotationInfo from "./components/Owner-dashboard/ClientManagement/quotationInfo";
 import ManageUser from "./components/Owner-dashboard/ManageUser/User";
