@@ -16,7 +16,7 @@ import GenerateBill from "./components/Clerk-dashboard/GenerateBill";
 import TrackRecords from "./components/Clerk-dashboard/TrackRecords";
 import QuotationsList from "./components/Clerk-dashboard/QuotationsList";
 import ViewQuotation from "./components/Clerk-dashboard/ViewQuotation";
-import EmployeeManagement from "./components/Clerk-dashboard/Employee-management";
+import EmployeeManagement from "./components/Clerk-dashboard/employee-management";
 import Requests from "./components/Clerk-dashboard/Requests";
 import AssignWork from "./components/Clerk-dashboard/assign-work";
 import EmployeeList from "./components/Clerk-dashboard/employee-list";
