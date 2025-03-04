@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import Login from "./components/Login/Login";
+
 import ClerkDashboard from "./components/Clerk-dashboard/Clerk-dashboard";
 import ClientManagement from "./components/Clerk-dashboard/ClientManagement";
 import ProjectManagement from "./components/Clerk-dashboard/ProjectManagement";
@@ -17,20 +18,24 @@ import TrackRecords from "./components/Clerk-dashboard/TrackRecords";
 import QuotationsList from "./components/Clerk-dashboard/QuotationsList";
 import ViewQuotation from "./components/Clerk-dashboard/ViewQuotation";
 import EmployeeManagement from "./components/Clerk-dashboard/employee-management";
-import Requests from "./components/Clerk-dashboard/Requests";
+import Requests from "./components/Clerk-dashboard/requests";
 import AssignWork from "./components/Clerk-dashboard/assign-work";
 import EmployeeList from "./components/Clerk-dashboard/employee-list";
+import DummyQuotation from "./components/Clerk-dashboard/DummyQuotation";
+
+
 import EmployeeDashboard from "./components/Employee-dashboard/Employee-dashboard";
 import Sidebar from "./components/Employee-dashboard/Sidebar";
-import PersonalInformation from "./components/Employee-dashboard/PersonalInformation";
-import AssignedProject from "./components/Employee-dashboard/AssignedProject";
-import LeaveSalary from "./components/Employee-dashboard/LeaveSalary";
-import Company from "./components/Owner-dashboard/ClientManagement/Company";
-import QuotationList from "./components/Owner-dashboard/ClientManagement/QuotationList";
-import QuotationInfo from "./components/Owner-dashboard/ClientManagement/QuotationInfo";
+import PersonalInformation from "./components/Employee-dashboard/personolinformation";
+import AssignedProject from "./components/Employee-dashboard/assignedproect";
+import LeaveSalary from "./components/Employee-dashboard/leavesallary";
+
+
+import Company from "./components/Owner-dashboard/ClientManagement/company";
+import QuotationList from "./components/Owner-dashboard/ClientManagement/quotationList";
+import QuotationInfo from "./components/Owner-dashboard/ClientManagement/quotationInfo";
 import ManageUser from "./components/Owner-dashboard/ManageUser/User";
 import RevenueManagement from "./components/Owner-dashboard/Revenue/RevenueManagement";
-import DummyQuotation from "./components/Clerk-dashboard/DummyQuotation";
 
 const App = () => {
   return (
