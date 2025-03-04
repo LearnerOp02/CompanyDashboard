@@ -32,10 +32,10 @@ import LeaveSalary from "./components/Employee-dashboard/leavesallary";
 
 
 import Company from "./components/Owner-dashboard/clientmanagement/company";
-import QuotationList from "./components/Owner-dashboard/clientmanagement/quotationList";
-import QuotationInfo from "./components/Owner-dashboard/clientmanagement/quotationInfo";
+import QuotationList from "./components/Owner-dashboard/clientmanagement/quotationlist";
+import QuotationInfo from "./components/Owner-dashboard/clientmanagement/quotationinfo";
 import ManageUser from "./components/Owner-dashboard/manageuser/User";
-import RevenueManagement from "./components/Owner-dashboard/revenue/RevenueManagement";
+import RevenueManagement from "./components/Owner-dashboard/revenue/Revenuemanagement";
 
 const App = () => {
   return (
