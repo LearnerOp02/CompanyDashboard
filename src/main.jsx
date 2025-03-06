@@ -1,16 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+/* eslint-disable no-unused-vars */
+import React, { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import App from "./App";
+import App from "./App.jsx";
+import "./index.css";
 
-// Create root element
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-// Render application with StrictMode and BrowserRouter
-root.render(
-  <React.StrictMode>
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </StrictMode>
 );
