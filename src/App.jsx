@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import OwnerDashboard from "./components/owner-dashboard/owner-dashboard";
 
 import Login from "./components/Login/Login";
@@ -33,7 +33,6 @@ import Revenuemanagement from "./components/Owner-dashboard/revenue/Revenuemanag
 
 const App = () => {
   return (
-    <Router>
       <Routes>
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
@@ -77,7 +76,6 @@ const App = () => {
         <Route path="/assignedproject" element={<AssignedProject />} />
         <Route path="/leavesalary" element={<LeaveSallary />} />
       </Routes>
-    </Router>
   );
 };
 
