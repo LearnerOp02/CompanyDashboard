@@ -16,7 +16,7 @@ const Login = () => {
     setIsLoading(true); // Set loading state to true
 
     try {
-      const response = await fetch("http://localhost/login-backend/login.php", {
+      const response = await fetch("http://saisamarth-ploytech.infinityfreeapp.com/login.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
