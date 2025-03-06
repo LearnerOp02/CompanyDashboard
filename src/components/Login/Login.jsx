@@ -35,7 +35,7 @@ const Login = () => {
       if (data.success) {
         switch (data.role) {
           case "owner":
-            navigate("/owner-dashboard");
+            navigate("/manageuser");
             break;
           case "employee":
             navigate("/employee-dashboard");
