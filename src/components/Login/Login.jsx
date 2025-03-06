@@ -15,47 +15,40 @@ const Login = () => {
     e.preventDefault();
     setIsLoading(true); // Set loading state to true
 
-    try {
-      const response = await fetch("https://saisamarth-ploytech.infinityfreeapp.com/login.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username, password }),
-      });
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsLoading(true);
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || "Network response was not ok");
-      }
+  try {
+    const response = await fetch("https://saisamarth-ploytech.infinityfreeapp.com/login.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ username, password }),
+    });
 
-      const data = await response.json();
-      setMessage(data.message);
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.message || "Failed to fetch");
 
-      if (data.success) {
-        switch (data.role) {
-          case "owner":
-            navigate("/manageuser");
-            break;
-          case "employee":
-            navigate("/employee-dashboard");
-            break;
-          case "clerk":
-            navigate("/clerk-dashboard");
-            break;
-          default:
-            setMessage("Unknown role. Please contact support.");
-        }
-      } else {
-        setMessage("Invalid username or password. Please try again.");
-      }
-    } catch (error) {
-      setMessage("An error occurred: " + error.message);
-      console.error("Error:", error);
-    } finally {
-      setIsLoading(false); // Reset loading state
+    setMessage(data.message);
+
+    if (data.success) {
+      navigate(
+        data.role === "owner" ? "/manageuser" :
+        data.role === "employee" ? "/employee-dashboard" :
+        data.role === "clerk" ? "/clerk-dashboard" :
+        "/"
+      );
+    } else {
+      setMessage("Invalid username or password.");
     }
-  };
+  } catch (error) {
+    setMessage("An error occurred: " + error.message);
+  } finally {
+    setIsLoading(false);
+  }
+};
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-orange-200 via-orange-300 to-orange-400 px-4 lg:px-8 animate-gradient bg-noise font-inter">
