@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 
@@ -70,9 +71,9 @@ const App = () => {
       <Route path="/employee-list" element={<EmployeeList />} />
       <Route path="/assign-work" element={<AssignWork />} />
       <Route path="/requests" element={<Requests />} />
-      <Route path="/personal-information" element={<PersonalInformation />} />
-      <Route path="/assigned-project" element={<AssignedProject />} />
-      <Route path="/leave-salary" element={<LeaveSalary />} />
+      <Route path="/personalinformation" element={<PersonalInformation />} />
+      <Route path="/assignedproject" element={<AssignedProject />} />
+      <Route path="/leavesalary" element={<LeaveSalary />} />
     </Routes>
   );
 };
