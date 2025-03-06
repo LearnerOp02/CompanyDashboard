@@ -5,8 +5,8 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import OwnerDashboard from "./components/owner-dashboard/owner-dashboard";
-import Login from "./components/login/login";
+// import OwnerDashboard from "./components/owner-dashboard/owner-dashboard";
+import Login from "./components/login/Login";
 import ClerkDashboard from "./components/Clerk-dashboard/Clerk-dashboard";
 import ClientManagement from "./components/Clerk-dashboard/ClientManagement";
 import ProjectManagement from "./components/Clerk-dashboard/ProjectManagement";
@@ -39,7 +39,7 @@ const App = () => {
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
 
-        <Route path="/owner-dashboard" element={<OwnerDashboard />} />
+        {/* <Route path="/owner-dashboard" element={<OwnerDashboard />} /> */}
         <Route path="/company" element={<Company />} />
         <Route path="/list/:company" element={<Quotationlist />} />
         <Route path="/info/:company/:projectId" element={<QuotationInfo />} />
